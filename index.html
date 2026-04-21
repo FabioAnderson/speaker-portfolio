@@ -1,49 +1,195 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fabio Leite | Speaker | QA | AI Testing Expert</title>
-    <meta name="description" content="Fabio Leite's personal landing page. An international speaker on Quality Assurance and AI Testing." />
-    <meta property="og:title" content="Fabio Leite | Speaker | QA | AI Testing Expert" />
-    <meta property="og:description" content="Elevating Quality Through Intelligence. Explore talks, topics, and experience." />
-    <meta property="og:image" content="/og.jpg" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              'midnight-blue': '#0A1429',
-              'accent-blue': '#0B3D91',
-              'light-slate': '#ccd6f6',
-              'slate': '#8892b0',
-            },
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabio Leite | QA Lead | Generative AI Expert | International Speaker</title>
+  <meta name="description" content="Fabio Leite is a Quality Assurance Lead and Generative AI specialist. International speaker and expert in testing modern AI-powered systems.">
+  <meta property="og:title" content="Fabio Leite | QA Lead | Generative AI Expert">
+  <meta property="og:description" content="Elevating Quality Through Intelligent Systems. Explore talks, topics, and experience.">
+  <meta property="og:image" content="/og.jpg">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'midnight-blue': '#0A1429',
+            'accent-blue': '#0B3D91',
+            'light-slate': '#ccd6f6',
+            'slate': '#8892b0',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
           },
         },
-      }
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
+      },
+    }
+  </script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    @layer utilities {
+      .selection-blue { selection-background-color: #0B3D91; selection-color: white; }
+    }
+    html { scroll-behavior: smooth; }
+    body { background-color: #0A1429; color: #8892b0; overflow-x: hidden; }
+    ::selection { background: #0B3D91; color: white; }
+  </style>
 </head>
-  <body class="bg-midnight-blue">
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+<body class="font-sans">
+
+  <!-- Header -->
+  <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+    <nav class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 flex justify-between items-center py-4">
+      <a href="#hero" class="text-xl font-bold text-light-slate hover:text-accent-blue transition-colors">FL</a>
+
+      <!-- Desktop Menu -->
+      <div id="nav-container" class="hidden md:flex items-center space-x-8">
+        <div id="nav-items" class="flex space-x-8">
+          <!-- JS dynamic -->
+        </div>
+        
+        <!-- Language Toggle -->
+        <button class="lang-toggle flex items-center bg-accent-blue/10 border border-accent-blue/30 px-3 py-1 rounded-full text-xs font-bold transition-all duration-300">
+          <span class="lang-en text-accent-blue">EN</span>
+          <span class="mx-1 text-slate/50">|</span>
+          <span class="lang-pt text-slate">PT</span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu Buttons -->
+      <div class="md:hidden flex items-center space-x-4">
+        <button class="lang-toggle flex items-center bg-accent-blue/10 border border-accent-blue/30 px-2 py-1 rounded-full text-xs font-bold">
+          <span class="lang-current">EN</span>
+        </button>
+        <button id="menu-btn" class="text-slate focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 bg-midnight-blue/95 border-b border-slate/10">
+      <div id="mobile-nav-items" class="flex flex-col space-y-4">
+        <!-- JS dynamic -->
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex flex-col justify-center items-start text-left px-6 md:px-12 lg:px-24 max-w-5xl mx-auto">
+      <h1 class="text-5xl md:text-7xl font-bold text-light-slate tracking-tight">Fabio Leite</h1>
+      <h2 id="hero-tagline" class="mt-4 text-3xl md:text-5xl font-bold text-slate tracking-tight">Loading...</h2>
+      <p id="hero-subline" class="mt-6 text-lg text-slate max-w-xl">Loading...</p>
+      <div class="mt-8 flex flex-col sm:row gap-4">
+        <a href="#contact" id="hero-book-me" class="px-8 py-3 border border-accent-blue text-accent-blue rounded-md font-medium hover:bg-accent-blue hover:text-white transition duration-300 text-center">Loading...</a>
+        <a href="https://www.linkedin.com/in/fabio-anderson-leite/" target="_blank" id="hero-connect" class="px-8 py-3 bg-accent-blue text-white rounded-md font-medium hover:bg-opacity-80 transition duration-300 text-center">Loading...</a>
+      </div>
+    </section>
+
+    <!-- Speaker Section -->
+    <section id="speaker" class="min-h-screen flex flex-col justify-center py-20 md:py-28 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
+      <h2 id="speaker-title" class="text-4xl font-bold text-light-slate mb-12 text-center">Loading...</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="text-slate text-lg">
+          <p id="speaker-bio" class="mb-6">Loading...</p>
+          <div id="speaker-talks" class="space-y-4">
+            <!-- JS dynamic -->
+          </div>
+        </div>
+        <div class="grid grid-cols-1 gap-4">
+          <img src="https://picsum.photos/seed/speaker1/600/400" alt="Fabio Leite speaking" class="rounded-lg shadow-lg w-full h-auto object-cover" loading="lazy" referrerPolicy="no-referrer">
+          <div class="grid grid-cols-2 gap-4">
+            <img src="https://picsum.photos/seed/speaker2/400/300" alt="Workshop" class="rounded-lg shadow-lg w-full h-auto object-cover" loading="lazy" referrerPolicy="no-referrer">
+            <img src="https://picsum.photos/seed/speaker3/400/300" alt="Interaction" class="rounded-lg shadow-lg w-full h-auto object-cover" loading="lazy" referrerPolicy="no-referrer">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Topics Section -->
+    <section id="topics" class="min-h-screen flex flex-col justify-center py-20 md:py-28 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
+      <h2 id="topics-title" class="text-4xl font-bold text-light-slate mb-12 text-center">Loading...</h2>
+      <div id="topics-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- JS dynamic -->
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="min-h-screen flex flex-col justify-center py-20 md:py-28 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
+      <h2 id="experience-title" class="text-4xl font-bold text-light-slate mb-12 text-center">Loading...</h2>
+      <div id="experience-list" class="space-y-12">
+        <!-- JS dynamic -->
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="min-h-screen flex flex-col justify-center py-20 md:py-28 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
+      <h2 id="skills-title" class="text-4xl font-bold text-light-slate mb-12 text-center">Loading...</h2>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <h3 id="hard-skills-title" class="text-2xl font-semibold text-light-slate mb-6 text-center md:text-left">Loading...</h3>
+          <ul id="hard-skills-list" class="list-none space-y-3">
+            <!-- JS dynamic -->
+          </ul>
+        </div>
+        <div>
+          <h3 id="soft-skills-title" class="text-2xl font-semibold text-light-slate mb-6 text-center md:text-left">Loading...</h3>
+          <ul id="soft-skills-list" class="list-none space-y-3">
+            <!-- JS dynamic -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="min-h-screen flex flex-col justify-center py-20 md:py-28 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto text-center">
+      <h2 id="contact-title" class="text-4xl font-bold text-light-slate mb-4">Loading...</h2>
+      <p id="contact-description" class="text-xl text-slate max-w-2xl mx-auto mb-8">Loading...</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://www.linkedin.com/in/fabio-anderson-leite/" target="_blank" id="contact-connect" class="px-8 py-3 bg-accent-blue text-white rounded-md font-medium hover:bg-opacity-80 transition duration-300 text-center">Loading...</a>
+        <a href="mailto:fabio115.anderson@gmail.com" id="contact-email" class="px-8 py-3 border border-accent-blue text-accent-blue rounded-md font-medium hover:bg-accent-blue hover:text-white transition duration-300 text-center">Loading...</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-midnight-blue py-8 px-6 md:px-12 lg:px-24 border-t border-slate/20">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
+      <div class="flex-1 mb-4 sm:mb-0">
+        <nav id="footer-nav" class="flex flex-wrap justify-center sm:justify-start gap-x-6 gap-y-2">
+          <!-- JS dynamic -->
+        </nav>
+      </div>
+      <div id="copyright" class="flex-1 text-center text-slate">
+        &copy; 2026 Fabio Leite
+      </div>
+      <div class="flex-1 flex justify-center sm:justify-end mt-4 sm:mt-0">
+        <a href="https://www.linkedin.com/in/fabio-anderson-leite/" target="_blank" class="text-slate hover:text-light-slate transition-colors duration-300">
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" class="fixed bottom-8 right-8 bg-accent-blue text-white p-3 rounded-full shadow-lg opacity-0 pointer-events-none transition-opacity duration-300 hover:bg-opacity-80 focus:outline-none" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
+  <script src="/script.js"></script>
+</body>
 </html>
