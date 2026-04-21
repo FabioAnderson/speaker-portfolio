@@ -193,7 +193,10 @@ const SOCIAL_LINKS = {
   email: 'mailto:fabio115.anderson@gmail.com',
 };
 
-let currentLanguage = localStorage.getItem('language') || 'en';
+let currentLanguage = localStorage.getItem('language');
+if (currentLanguage !== 'en' && currentLanguage !== 'pt') {
+  currentLanguage = 'en';
+}
 
 function updateContent() {
   const t = translations[currentLanguage];
