@@ -52,7 +52,12 @@
       <!-- Desktop Menu -->
       <div id="nav-container" class="hidden md:flex items-center space-x-8">
         <div id="nav-items" class="flex space-x-8">
-          <!-- JS dynamic -->
+          <a href="#hero" class="nav-link text-sm font-medium text-accent-blue transition-colors duration-300" data-href="#hero">Home</a>
+          <a href="#speaker" class="nav-link text-sm font-medium text-slate hover:text-light-slate transition-colors duration-300" data-href="#speaker">Speaker</a>
+          <a href="#topics" class="nav-link text-sm font-medium text-slate hover:text-light-slate transition-colors duration-300" data-href="#topics">Topics</a>
+          <a href="#experience" class="nav-link text-sm font-medium text-slate hover:text-light-slate transition-colors duration-300" data-href="#experience">Experience</a>
+          <a href="#skills" class="nav-link text-sm font-medium text-slate hover:text-light-slate transition-colors duration-300" data-href="#skills">Skills</a>
+          <a href="#contact" class="nav-link text-sm font-medium text-slate hover:text-light-slate transition-colors duration-300" data-href="#contact">Contact</a>
         </div>
         
         <!-- Language Toggle -->
@@ -88,22 +93,29 @@
     <!-- Hero Section -->
     <section id="hero" class="min-h-screen flex flex-col justify-center items-start text-left px-6 md:px-12 lg:px-24 max-w-5xl mx-auto">
       <h1 class="text-5xl md:text-7xl font-bold text-light-slate tracking-tight">Fabio Leite</h1>
-      <h2 id="hero-tagline" class="mt-4 text-3xl md:text-5xl font-bold text-slate tracking-tight">Loading...</h2>
-      <p id="hero-subline" class="mt-6 text-lg text-slate max-w-xl">Loading...</p>
+      <h2 id="hero-tagline" class="mt-4 text-3xl md:text-5xl font-bold text-slate tracking-tight">Elevating Quality Through Intelligent Systems</h2>
+      <p id="hero-subline" class="mt-6 text-lg text-slate max-w-xl">QA Lead | Generative AI Quality Engineer | International Speaker</p>
       <div class="mt-8 flex flex-col sm:flex-row gap-4">
-        <a href="#contact" id="hero-book-me" class="px-8 py-3 border border-accent-blue text-accent-blue rounded-md font-medium hover:bg-accent-blue hover:text-white transition duration-300 text-center">Loading...</a>
-        <a href="https://www.linkedin.com/in/fabio-anderson-leite/" target="_blank" id="hero-connect" class="px-8 py-3 bg-accent-blue text-white rounded-md font-medium hover:bg-opacity-80 transition duration-300 text-center">Loading...</a>
+        <a href="#contact" id="hero-book-me" class="px-8 py-3 border border-accent-blue text-accent-blue rounded-md font-medium hover:bg-accent-blue hover:text-white transition duration-300 text-center">Book me</a>
+        <a href="https://www.linkedin.com/in/fabio-anderson-leite/" target="_blank" id="hero-connect" class="px-8 py-3 bg-accent-blue text-white rounded-md font-medium hover:bg-opacity-80 transition duration-300 text-center">Connect on LinkedIn</a>
       </div>
     </section>
 
     <!-- Speaker Section -->
     <section id="speaker" class="min-h-screen flex flex-col justify-center py-20 md:py-28 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
-      <h2 id="speaker-title" class="text-4xl font-bold text-light-slate mb-12 text-center">Loading...</h2>
+      <h2 id="speaker-title" class="text-4xl font-bold text-light-slate mb-12 text-center">International Speaker</h2>
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div class="text-slate text-lg">
-          <p id="speaker-bio" class="mb-6">Loading...</p>
+          <p id="speaker-bio" class="mb-6">Fabio Leite is a Quality Assurance Lead and Generative AI specialist with over a decade of experience building scalable, reliable, and intelligent testing solutions. He operates at the intersection of Quality Engineering, Artificial Intelligence, and product strategy, helping organizations design and validate modern AI-powered systems. His work includes architecting LLM evaluation frameworks using Python, Pytest, and Ragas, implementing end-to-end testing with Playwright, and defining QA strategies for GenAI applications. As an international speaker, he shares practical insights on testing LLMs, RAG pipelines, and AI-driven systems.</p>
           <div id="speaker-talks" class="space-y-4">
-            <!-- JS dynamic -->
+            <div class="p-4 border-l-4 border-accent-blue bg-midnight-blue/50 rounded-r-lg">
+              <h3 class="font-semibold text-light-slate">Building an AI-Powered Testing Tools Platform (Full-Day Workshop)</h3>
+              <p class="text-sm text-slate">DSTB's Quality Beacon, Copenhagen, Denmark, 2025 </p>
+            </div>
+            <div class="p-4 border-l-4 border-accent-blue bg-midnight-blue/50 rounded-r-lg">
+              <h3 class="font-semibold text-light-slate">Challenges in LLM Testing</h3>
+              <p class="text-sm text-slate">Minas Testing Conference, Belo Horizonte, Brazil, 2025 </p>
+            </div>
           </div>
         </div>
         <div class="grid grid-cols-1 gap-4">
@@ -118,34 +130,52 @@
 
     <!-- Topics Section -->
     <section id="topics" class="min-h-screen flex flex-col justify-center py-20 md:py-28 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
-      <h2 id="topics-title" class="text-4xl font-bold text-light-slate mb-12 text-center">Loading...</h2>
+      <h2 id="topics-title" class="text-4xl font-bold text-light-slate mb-12 text-center">Topics I Cover</h2>
       <div id="topics-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- JS dynamic -->
+        <div class="bg-slate/10 p-6 rounded-lg border border-slate/20 hover:border-accent-blue transition-colors duration-300 transform hover:-translate-y-1">
+          <p class="text-lg font-medium text-light-slate text-center">QA Strategy for Generative AI Systems</p>
+        </div>
+        <div class="bg-slate/10 p-6 rounded-lg border border-slate/20 hover:border-accent-blue transition-colors duration-300 transform hover:-translate-y-1">
+          <p class="text-lg font-medium text-light-slate text-center">Testing LLM Applications & RAG Pipelines</p>
+        </div>
+        <div class="bg-slate/10 p-6 rounded-lg border border-slate/20 hover:border-accent-blue transition-colors duration-300 transform hover:-translate-y-1">
+          <p class="text-lg font-medium text-light-slate text-center">AI-as-a-Judge and LLM Evaluation Frameworks</p>
+        </div>
       </div>
     </section>
 
     <!-- Experience Section -->
     <section id="experience" class="min-h-screen flex flex-col justify-center py-20 md:py-28 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
-      <h2 id="experience-title" class="text-4xl font-bold text-light-slate mb-12 text-center">Loading...</h2>
+      <h2 id="experience-title" class="text-4xl font-bold text-light-slate mb-12 text-center">Trusted By / Experience</h2>
       <div id="experience-list" class="space-y-12">
-        <!-- JS dynamic -->
+        <div class="flex flex-col md:flex-row items-start gap-8 p-6 rounded-lg bg-slate/5">
+          <div class="flex-shrink-0">
+            <div class="w-24 h-24 bg-white rounded-md flex items-center justify-center">
+              <span class="text-midnight-blue font-bold text-lg text-center px-1">Thoughtworks</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-light-slate">Senior QA Engineer / GenAI Quality Lead</h3>
+            <p class="mt-2 text-slate">Led QA strategy for Generative AI applications, architected LLM evaluation frameworks using AI-as-a-Judge with Python, Pytest, and Ragas, implemented end-to-end testing with Playwright, defined KPIs and quality thresholds, and partnered with US clients (onsite) for strategic planning and roadmap alignment.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="min-h-screen flex flex-col justify-center py-20 md:py-28 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
-      <h2 id="skills-title" class="text-4xl font-bold text-light-slate mb-12 text-center">Loading...</h2>
+      <h2 id="skills-title" class="text-4xl font-bold text-light-slate mb-12 text-center">Core Competencies</h2>
       <div class="grid md:grid-cols-2 gap-12">
         <div>
-          <h3 id="hard-skills-title" class="text-2xl font-semibold text-light-slate mb-6 text-center md:text-left">Loading...</h3>
+          <h3 id="hard-skills-title" class="text-2xl font-semibold text-light-slate mb-6 text-center md:text-left">Hard Skills</h3>
           <ul id="hard-skills-list" class="list-none space-y-3">
-            <!-- JS dynamic -->
+            <li class="flex items-center text-slate">Generative AI Testing</li>
           </ul>
         </div>
         <div>
-          <h3 id="soft-skills-title" class="text-2xl font-semibold text-light-slate mb-6 text-center md:text-left">Loading...</h3>
+          <h3 id="soft-skills-title" class="text-2xl font-semibold text-light-slate mb-6 text-center md:text-left">Soft Skills</h3>
           <ul id="soft-skills-list" class="list-none space-y-3">
-            <!-- JS dynamic -->
+            <li class="flex items-center text-slate">Leadership</li>
           </ul>
         </div>
       </div>
@@ -153,11 +183,11 @@
 
     <!-- Contact Section -->
     <section id="contact" class="min-h-screen flex flex-col justify-center py-20 md:py-28 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto text-center">
-      <h2 id="contact-title" class="text-4xl font-bold text-light-slate mb-4">Loading...</h2>
-      <p id="contact-description" class="text-xl text-slate max-w-2xl mx-auto mb-8">Loading...</p>
+      <h2 id="contact-title" class="text-4xl font-bold text-light-slate mb-4">Get In Touch</h2>
+      <p id="contact-description" class="text-xl text-slate max-w-2xl mx-auto mb-8">Let’s collaborate on building trustworthy AI systems or discuss opportunities in QA leadership, Generative AI, and quality engineering.</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="https://www.linkedin.com/in/fabio-anderson-leite/" target="_blank" id="contact-connect" class="px-8 py-3 bg-accent-blue text-white rounded-md font-medium hover:bg-opacity-80 transition duration-300 text-center">Loading...</a>
-        <a href="mailto:fabio115.anderson@gmail.com" id="contact-email" class="px-8 py-3 border border-accent-blue text-accent-blue rounded-md font-medium hover:bg-accent-blue hover:text-white transition duration-300 text-center">Loading...</a>
+        <a href="https://www.linkedin.com/in/fabio-anderson-leite/" target="_blank" id="contact-connect" class="px-8 py-3 bg-accent-blue text-white rounded-md font-medium hover:bg-opacity-80 transition duration-300 text-center">Connect on LinkedIn</a>
+        <a href="mailto:fabio115.anderson@gmail.com" id="contact-email" class="px-8 py-3 border border-accent-blue text-accent-blue rounded-md font-medium hover:bg-accent-blue hover:text-white transition duration-300 text-center">Send an Email</a>
       </div>
     </section>
   </main>
@@ -190,6 +220,6 @@
     </svg>
   </button>
 
-  <script src="/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

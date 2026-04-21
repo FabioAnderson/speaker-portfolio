@@ -193,13 +193,20 @@ const SOCIAL_LINKS = {
   email: 'mailto:fabio115.anderson@gmail.com',
 };
 
-let currentLanguage = localStorage.getItem('language');
-if (currentLanguage !== 'en' && currentLanguage !== 'pt') {
-  currentLanguage = 'en';
+let currentLanguage = 'en';
+try {
+  const savedLang = localStorage.getItem('language');
+  if (savedLang === 'en' || savedLang === 'pt') {
+    currentLanguage = savedLang;
+  }
+} catch (e) {
+  console.warn('LocalStorage not available, defaulting to English.');
 }
 
 function updateContent() {
   const t = translations[currentLanguage];
+  
+  if (!t) return; // Segurança extra
   
   // Update Nav
   const navContainer = document.getElementById('nav-items');
@@ -422,7 +429,11 @@ function toggleMenu() {
 
 function toggleLanguage() {
   currentLanguage = currentLanguage === 'en' ? 'pt' : 'en';
-  localStorage.setItem('language', currentLanguage);
+  try {
+    localStorage.setItem('language', currentLanguage);
+  } catch (e) {
+    // LocalStorage blocked or full, ignore
+  }
   updateContent();
 }
 
